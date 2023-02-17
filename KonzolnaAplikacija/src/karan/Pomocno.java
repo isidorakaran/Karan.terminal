@@ -1,4 +1,4 @@
-package edunova;
+package karan;
 
 public class Pomocno {
 

@@ -49,5 +49,8 @@ public class Osoba extends Entitet {
 	public void setBrojTelefona(String brojTelefona) {
 		this.brojTelefona = brojTelefona;
 	}
-
+@Override
+public String toString() {
+	return ime+" "+prezime;
+}
 }

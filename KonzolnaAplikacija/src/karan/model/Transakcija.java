@@ -51,5 +51,10 @@ public VrstaTransakcije getVrstaTransakcije() {
 public void setVrstaTransakcije(VrstaTransakcije vrstaTransakcije) {
 	this.vrstaTransakcije = vrstaTransakcije;
 }
+@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return datum + opis + napomena;
+	}
 
 }

@@ -62,5 +62,10 @@ public List<Transakcija> getTransakcije() {
 public void setTransakcije(List<Transakcija> transakcije) {
 	this.transakcije = transakcije;
 }
+@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return ime + mjesavina + transakcije;
+	}
 
 }

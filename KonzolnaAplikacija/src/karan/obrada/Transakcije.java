@@ -115,7 +115,7 @@ public class Transakcije {
 
 	}
 
-	private void pregled(boolean prikaziIzbornik) {
+	public void pregled(boolean prikaziIzbornik) {
 		System.out.println("*** Transakcije u aplikaciji ***");
 		System.out.println("------------------");
 		int redniBr = 1;

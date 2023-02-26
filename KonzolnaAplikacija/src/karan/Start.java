@@ -3,6 +3,7 @@ package karan;
 import java.util.Scanner;
 
 import karan.obrada.Osobe;
+import karan.obrada.Psi;
 import karan.obrada.Transakcije;
 import karan.obrada.VrsteTransakcije;
 
@@ -10,12 +11,14 @@ public class Start {
 private Osobe osobe;
 private Transakcije transakcije;
 private VrsteTransakcije vrsteTransakcije;
+private Psi psi;
 
 public Start() {
 	Pomocno.ulaz = new Scanner(System.in);
 	osobe = new Osobe(this);
 	transakcije=new Transakcije(this);
 	vrsteTransakcije= new VrsteTransakcije(this);
+	psi=new Psi(this);
 	
 	pozdravnaPoruka();
 	glavniIzbornik();
@@ -29,7 +32,8 @@ public void glavniIzbornik() {
 	System.out.println("1. Osoba");
 	System.out.println("2. Vrsta transakcije");
 	System.out.println("3. Transakcije");
-	System.out.println("4. Izlaz iz programa");
+	System.out.println("4.Psi");
+	System.out.println("5. Izlaz iz programa");
 	odabirGlavnogIzbornika();
 	pozdravnaPoruka();
 }
@@ -43,6 +47,8 @@ case 2:
 case 3:
 	transakcije.izbornik();
 case 4:
+	psi.izbornik();
+case 5:
 	System.out.println("Doviđenja");
 	break;
 }
@@ -79,6 +85,12 @@ public VrsteTransakcije getVrsteTransakcije() {
 
 public void setVrsteTransakcije(VrsteTransakcije vrsteTransakcije) {
 	this.vrsteTransakcije = vrsteTransakcije;
+}
+public Psi getPsi() {
+	return psi;
+}
+public void setPsi(Psi psi) {
+	this.psi=psi;
 }
 public static void main(String[] args) {
 	if (args.length == 1) {

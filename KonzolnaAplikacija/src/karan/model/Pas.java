@@ -65,7 +65,7 @@ public void setTransakcije(List<Transakcija> transakcije) {
 @Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return ime + mjesavina + transakcije;
+		return ime ;
 	}
 
 }

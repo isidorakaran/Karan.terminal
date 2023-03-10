@@ -31,7 +31,8 @@ public class Transakcije {
 		// if(Pomocno.DEV) {
 		transakcije.add(new Transakcija(1,null, "opis neki", "neka napomena",
 				new Osoba(1, "Pero", "Perić", "email", "broj"), new VrstaTransakcije(1, "Ulaz")));
-
+		transakcije.add(new Transakcija(2,null, "opis neki", "neka napomena",
+				new Osoba(1, "Pero", "Perić", "email", "broj"), new VrstaTransakcije(1, "Ulaz")));
 	}
 	// }
 
